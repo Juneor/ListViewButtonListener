@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70.0dip"
+    android:background="@drawable/item"
+    android:drawingCacheQuality="high"
+    android:minHeight="70.0dip"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/sItemIcon"
+         android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:scaleType="fitXY"
+          	android:background="@drawable/bg_img_coner"
+          	android:padding="1dip"
+          	android:src="@drawable/b"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"/>
+
+    <TextView
+      android:id="@+id/title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+      
+        android:layout_alignTop="@+id/sItemIcon"
+        android:layout_toRightOf="@+id/sItemIcon"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dip"
+      android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@color/listTitle"
+        android:textSize="20.0sp" />
+
+
+    <TextView
+       android:id="@+id/info" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/sItemIcon"
+       
+        android:layout_marginLeft="20dip"
+       android:layout_marginTop="20dip"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="#ff4400"
+        android:textSize="12.0sp" />
+
+   <Button android:id="@+id/view_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_detail_selecter"
+		android:text="详情"
+	 android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip" />
+
+
+</RelativeLayout>
